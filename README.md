@@ -34,10 +34,17 @@ A **full-stack job portal** built with **Spring Boot** and **React.js**, where u
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 🛠 Backend Setup (Spring Boot)
 
 ```bash
 cd jobport-backend
 ./mvnw spring-boot:run
+```
+### Frontend Setup
+
+cd jobport-frontend
+npm install
+npm start
+
