@@ -43,7 +43,7 @@ cd jobport-backend
 ./mvnw spring-boot:run
 ```
 ### Frontend Setup
-
+```bash
 cd jobport-frontend
 npm install
 npm start
