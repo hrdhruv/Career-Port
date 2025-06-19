@@ -1,5 +1,5 @@
 
-# 🛡️ CareerPort - Secure Job Listing Platform (React Js + Spring Boot + MongoDB + JWT)
+# 💼 CareerPort - Secure Job Listing Platform (React Js + Spring Boot + MongoDB + JWT)
 
 This is a **Full stack secure job listing platform** built using **Spring Boot**, **MongoDB**, and **JWT-based authentication using Spring security**. It provides APIs for user authentication, role-based access, job post creation, and search functionality. The frontend is minimally implemented using **ReactJS**, intended primarily for testing and visualization.
 
