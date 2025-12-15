@@ -5,17 +5,17 @@ This is a **Full stack secure job listing platform** built using **Spring Boot**
 
 ---
 
-## 📌 Project Highlights
+##  Project Highlights
 
-- ✅ **JWT Authentication** (Login, Token Generation & Validation)
-- ✅ **Role-based Authorization** (`ADMIN`, `USER`)
-- ✅ **MongoDB Atlas** with **text search** (via `$search`)
-- ✅ **REST APIs** for job posts (view, search, create)
-- ✅ **Swagger UI** for API testing
+-  **JWT Authentication** (Login, Token Generation & Validation)
+-  **Role-based Authorization** (`ADMIN`, `USER`)
+-  **MongoDB Atlas** with **text search** (via `$search`)
+-  **REST APIs** for job posts (view, search, create)
+-  **Swagger UI** for API testing
 
 ---
 
-## 🔄 Simplified JWT Authentication Flow
+##  Simplified JWT Authentication Flow
 
 1.  **User logs in** by sending `username` and `password` to the `/auth/login` endpoint.
 2. **Backend authenticates** the credentials using **Spring Security**.
@@ -27,7 +27,7 @@ This is a **Full stack secure job listing platform** built using **Spring Boot**
 
 
 
-## 🔐 JWT Authentication Flow
+##  JWT Authentication Flow
 
 ```plaintext
 +------------+         +------------------------+          +------------------------+
@@ -53,7 +53,7 @@ This is a **Full stack secure job listing platform** built using **Spring Boot**
   Access protected endpoints like /posts, /post
 ```
 
-## 📪 API Endpoints Overview
+##  API Endpoints Overview
 
 | Method | Endpoint        | Role Required | Description                  |
 |--------|------------------|----------------|------------------------------|
@@ -64,7 +64,7 @@ This is a **Full stack secure job listing platform** built using **Spring Boot**
 
 ##  Project Structure Overview
 
-### 🔐 Authentication System
+###  Authentication System
 
 | File                          | Responsibility                                                              |
 |------------------------------|------------------------------------------------------------------------------|
@@ -95,7 +95,7 @@ This is a **Full stack secure job listing platform** built using **Spring Boot**
 
 ---
 
-### 🧠 Repositories
+###  Repositories
 
 | Repository              | Purpose                                                                |
 |-------------------------|------------------------------------------------------------------------|
@@ -105,24 +105,24 @@ This is a **Full stack secure job listing platform** built using **Spring Boot**
 
 ---
 
-### 🌐 Frontend (React)
+###  Frontend (React)
 
 The frontend is minimal and serves as a basic interface for:
 
-- 🔐 Logging in via `/login` using roles
-- 📋 Viewing job posts fetched via `/posts`  
-- 🔎 Searching and view posts using a search bar (`/posts/{text}`)  
+-  Logging in via `/login` using roles
+-  Viewing job posts fetched via `/posts`  
+-  Searching and view posts using a search bar (`/posts/{text}`)  
 
 > You can access the backend from the frontend by updating your API base URLs (e.g., `http://localhost:8080/posts`).
 
-🧪 **Note**: Most testing and interaction can be done via Swagger UI at  
+ **Note**: Most testing and interaction can be done via Swagger UI at  
 **[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)**
 
 ---
 
-## 🚀 Running the Project
+##  Running the Project
 
-### ✅ Prerequisites
+###  Prerequisites
 
 - Java 17+
 - MongoDB Atlas (connection configured in `application.properties`)
@@ -130,12 +130,12 @@ The frontend is minimal and serves as a basic interface for:
 
 ---
 
-### ▶️ Run the Backend
+###  Run the Backend
 
 ```bash
 mvn spring-boot:run
 ```
-## 🔐 Environment Variables
+##  Environment Variables
 
 Set the following properties in your `application.properties` file:
 
@@ -145,11 +145,11 @@ security.jwt.expiration-time=3600000
 spring.data.mongodb.uri=your-mongodb-uri
 ```
 
-## 👤 Roles and Access
+##  Roles and Access
 
 | Role  | Permissions                              |
 |--------|-------------------------------------------|
-| ADMIN | ✅ View job posts<br>✅ Search posts<br>✅ Create job posts |
-| USER  | ✅ View job posts<br>✅ Search posts               |
+| ADMIN |  View job posts<br> Search posts<br> Create job posts |
+| USER  |  View job posts<br> Search posts               |
 
 
